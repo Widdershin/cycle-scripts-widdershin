@@ -1,24 +1,25 @@
 {
-  "name": "cycle-scripts-es-browserify",
-  "version": "0.7.3",
+  "name": "cycle-scripts-widdershin",
+  "version": "0.1.0",
   "description": "create-cycle-app flavor using ES6 (babel) as language and Browserify as build tool",
   "scripts": {
     "test": "echo \"Maybe later\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geovanisouza92/create-cycle-app.git"
+    "url": "git+https://github.com/widdershin/cycle-scripts-widdershin.git"
   },
-  "author": "Geovani Souza <geovanisouza92@gmail.com>",
-  "license": "ISC",
+  "author": "Nick Johnstone",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/geovanisouza92/create-cycle-app/issues"
+    "url": "https://github.com/Widdershin/cycle-scripts-widdershin/issues"
   },
-  "homepage": "https://github.com/geovanisouza92/create-cycle-app#readme",
+  "homepage": "https://github.com/Widdershin/cycle-scripts-widdershin#readme",
   "bin": {
     "cycle-scripts": "./index.js"
   },
   "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
     "babel-preset-es2015": "^6.16.0",
     "babel-register": "^6.16.3",
     "babelify": "^7.3.0",
