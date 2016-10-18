@@ -7,6 +7,9 @@ var browserify = require('browserify')
 var babelify = require('babelify')
 var envify = require('envify/custom')
 var exorcist = require('exorcist')
+var babelConfig = require('../config/babel');
+
+babelConfig = Object.assign({}, babelConfig, {sourceMaps: true});
 
 require('dotenv').config({silent: true})
 
@@ -20,10 +23,7 @@ fs.copySync(publicPath, buildPath)
 
 browserify(path.join(srcPath, 'index.js'), {debug: true})
   .transform(
-    babelify.configure({
-      presets: ['es2015'],
-      sourceMaps: true
-    })
+    babelify.configure(babelConfig)
   )
   .transform(
     envify(Object.assign({}, process.env, {
