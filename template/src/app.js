@@ -1,5 +1,5 @@
 import {div} from '@cycle/dom';
---IMPORT--
+--IMPORT--;
 
 function App (sources) {
   return {
