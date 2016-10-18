@@ -1,6 +1,6 @@
-import objectTransformRestSpread from 'babel-plugin-transform-object-rest-spread';
+var objectTransformRestSpread = require('babel-plugin-transform-object-rest-spread');
 
-export default {
+module.exports = {
   presets: ['es2015'],
   plugins: [objectTransformRestSpread]
 }
