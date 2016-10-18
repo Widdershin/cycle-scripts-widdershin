@@ -1,11 +1,9 @@
-import {run} from '--RUN-LIB--'
-import {makeDOMDriver} from '@cycle/dom'
-import {App} from './app'
-
-const main = App
+import {run} from '--RUN-LIB--';
+import {makeDOMDriver} from '@cycle/dom';
+import {App} from './app';
 
 const drivers = {
   DOM: makeDOMDriver('#app')
-}
+};
 
-run(main, drivers)
+run(App, drivers);

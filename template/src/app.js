@@ -1,12 +1,12 @@
-import {div} from '@cycle/dom'
+import {div} from '@cycle/dom';
 --IMPORT--
 
-export function App (sources) {
-  const vtree$ = --STREAM--.of(
-    div('My Awesome Cycle.js app')
-  )
-  const sinks = {
-    DOM: vtree$
+function App (sources) {
+  return {
+    DOM: --STREAM--.of(
+      div('.hello-world', 'Hello world!')
+    );
   }
-  return sinks
 }
+
+export default App;
