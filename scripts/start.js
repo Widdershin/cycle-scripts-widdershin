@@ -20,7 +20,8 @@ budo(path.join('src', 'index.js'), {
     insertGlobals: true,
     transform: [
       babelify.configure({
-        presets: ['es2015']
+        presets: ['es2015'],
+        plugins: ['object-transform-rest-spread']
       }),
       envify(Object.assign({}, process.env, {
         _: 'purge',
