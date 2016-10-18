@@ -9,9 +9,9 @@ var mocha = path.resolve(process.cwd(), 'node_modules', '.bin', 'mocha')
 var args = [
   '--colors',
   '--require',
-  'babel-register',
+  '--compilers js:babel-core/register',
   !process.env.CI && (console.log(chalk.green.bold('Enabling watch mode')) || '--watch'),
-  'src/**/*.test.js'
+  'test/**/*test.js'
 ].filter(Boolean)
 
 spawn(mocha, args, {stdio: 'inherit'})
