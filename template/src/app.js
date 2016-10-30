@@ -1,7 +1,7 @@
 import {div} from '@cycle/dom';
 --IMPORT--;
 
-function App (sources) {
+function App ({DOM}) {
   return {
     DOM: --STREAM--.of(
       div('.hello-world', 'Hello world!')
