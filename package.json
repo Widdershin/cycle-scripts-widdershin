@@ -1,7 +1,7 @@
 {
   "name": "cycle-scripts-widdershin",
   "version": "0.3.0",
-  "description": "create-cycle-app flavor using ES6 (babel) as language and Browserify as build tool",
+  "description": "ES6 (babel) + Browserify + Semicolons (Widdershin)",
   "scripts": {
     "test": "echo \"Maybe later\""
   },
