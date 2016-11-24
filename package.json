@@ -1,6 +1,6 @@
 {
   "name": "cycle-scripts-widdershin",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "ES6 (babel) + Browserify + Semicolons (Widdershin)",
   "scripts": {
     "test": "echo \"Maybe later\""
